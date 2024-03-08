@@ -28,6 +28,13 @@
     text-align: center;
     margin-top: 50px;
  }
+ @media(max-width:768px) {
+  .contact .tittle {
+   
+    margin-top: 20px;
+    margin-bottom: 0;
+ }
+}
   .contact .tittle h1{
     text-align: center;
     background: #000046;  
@@ -55,7 +62,7 @@
   }
   
   .contact .content form .main-input {
-    padding: 20px;
+    padding: 25px;
     display: block;
     border: none;
     margin-bottom: 30px;
@@ -67,7 +74,7 @@
   @media(max-width:768px){
     .contact .content form .main-input {
       padding: 15px;
-    width:400px;
+      max-width: 100%;
     }
   }
   .contact .content form .main-input::placeholder {
@@ -82,7 +89,7 @@
   .contact .content form textarea.main-input {
     height: 200px;
   }
-  .contact .content form input[type="submit"]  {
+  .contact .content form .signin {
     background: -webkit-linear-gradient(90deg, #0a3c8e,#04398e,#203b86,#09489b);
     background: linear-gradient(90deg, #001a43,#022e74,#213671,#084da6);
     padding: 15px;
@@ -100,7 +107,12 @@
     transition: 0.5s;
     text-decoration: none;
   }
-  .contact .content form input[type="submit"] :hover{
+  @media(max-width:768px){
+    .contact .content form .signin {
+    width:300px;
+    }
+  }
+  .contact .content form .signin:hover{
     transform: translateX(-10px);
   }
   
@@ -110,6 +122,11 @@
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
+}
+@media(max-width:992px){
+  .click{
+    margin-bottom: 25px;
+}
 }
 
 @media(max-width:992px){
@@ -123,9 +140,16 @@
 }
 .forget a{
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 10px;
 }
-
+@media(max-width:992px){
+  .forget a{
+    font-size: 18px;
+}
+.remember {
+  font-size: 20px;
+}
+}
 .contact .or .txt{
   display: flex;
   justify-content: center;
@@ -176,7 +200,9 @@
        } 
        @media(max-width:768px){
         .contact .donot h4{
-        font-size: 10px;
+        font-size: 18px;
+        margin-top: 25px;
+        line-height: 1.5;
       }
       } 
     /*end register*/
