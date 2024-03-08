@@ -33,7 +33,7 @@
         </div>
       
           <div class="content">
-            <form >
+            <form id="signInForm">
               <div class="row" >
                 <div class="col">
                   <input type="text" class="main-input" placeholder="First name" required>
@@ -73,6 +73,13 @@
           </div>
         </div>
       </div>
-   
+      <script>
+        document.getElementById('signInForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+            // Redirect to another page (replace 'targetPage.html' with your desired page)
+            window.location.href = './index.html';
+        });
+    </script>
+            <script src="js/script.js"></script>
 </body>
 </html>

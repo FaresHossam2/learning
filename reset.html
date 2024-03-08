@@ -36,7 +36,7 @@
                 <img src="img/login.png" alt="">
             </div>
 
-            <form>
+            <form id="signInForm">
               <input class="main-input" type="text" name="name" placeholder="Username " required>
               <input class="main-input" type="password" name="name" placeholder="New Password" required>
               <input class="main-input" type="password" name="name" placeholder="Confirm Password" required>
@@ -48,6 +48,13 @@
           </div>
         </div>
       </div>
-   
+      <script>
+        document.getElementById('signInForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+            // Redirect to another page (replace 'targetPage.html' with your desired page)
+            window.location.href = './index.html';
+        });
+    </script>
+            <script src="js/script.js"></script>
 </body>
 </html>
