@@ -64,6 +64,12 @@
     color: white;
     border-radius: 25px;
   }
+  @media(max-width:768px){
+    .contact .content form .main-input {
+      max-width: 100%;
+      max-width: fit-content;
+    }
+  }
   .contact .content form .main-input::placeholder {
    color: #888888;
   }
