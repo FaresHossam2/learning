@@ -76,7 +76,7 @@
   .contact .content form textarea.main-input {
     height: 200px;
   }
-  .contact .content form input[type="submit"]  {
+  .contact .content form .reset  {
     background: -webkit-linear-gradient(90deg, #0a3c8e,#04398e,#203b86,#09489b);
     background: linear-gradient(90deg, #001a43,#022e74,#213671,#084da6);
     padding: 15px;
@@ -94,7 +94,7 @@
     transition: 0.5s;
     text-decoration: none;
   }
-  .contact .content form input[type="submit"] :hover{
+  .contact .content form .reset:hover{
     transform: translateX(-10px);
   }
   
