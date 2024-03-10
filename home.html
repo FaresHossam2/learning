@@ -22,7 +22,7 @@
         rel="stylesheet" />
     <!-- JS & JQUERY -->
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js.js"></script>
 </head>
 
 <body>
@@ -30,8 +30,8 @@
     <header>
         <nav>
             <div class="logo">
-                <i class="fa-solid fa-graduation-cap"></i>   
-             </div>
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
             <ul>
                 <i id="close" class="fa-solid fa-xmark"></i>
                 <li><a href="#home">home</a></li>
@@ -51,11 +51,11 @@
         <div class="container">
             <div class="text">
                 <h3>develop your skills in a new and unique way</h3>
-    
+
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Deleniti quae incidunt consequatur consequuntur! Odit possimus
                     voluptatem optio quaerat animi, amet autem doloremque quisquam. Vel, sit.</p>
-    
+
                 <button>enroll now</button>
             </div>
         </div>
@@ -78,11 +78,85 @@
                 <button>about more <i class="fa-solid fa-angles-right"></i></button>
             </div>
             <div class="about-img">
-                <img src="img/about.png" alt="">
+                <img src="img/home.png" alt="">
             </div>
         </div>
     </div>
     <!--end about-->
+
+    <!--start reviews-->
+    <div class="reviews" id="reviews">
+        <div class="container">
+            <div class="tittle">
+                <h1>What says our <span>Customers</span></h1>
+            </div>
+            <div class="rev-cards">
+                <div class="rev-content" id="rev-content1">
+                    <div class="cli-img">
+                        <img src="img/client1.jpg" alt="">
+                    </div>
+
+                    <div class="cli-txt">
+
+                        <div class="comment">
+                            <h2>LusDen</h2>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atque libero repellendus voluptate, pariatur voluptatibus iste.</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rev-content" id="rev-content2">
+                    <div class="cli-img">
+                        <img src="img/client2.jpg" alt="">
+                    </div>
+
+                    <div class="cli-txt">
+
+                        <div class="comment">
+                            <h2>Zen Court</h2>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atque libero repellendus voluptate, pariatur voluptatibus iste.</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rev-content" id="rev-content3">
+                    <div class="cli-img">
+                        <img src="img/client3.jpg" alt="">
+                    </div>
+
+                    <div class="cli-txt">
+
+                        <div class="comment">
+                            <h2>Olivia</h2>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atque libero repellendus voluptate, pariatur voluptatibus iste.</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="dots">
+                <div id="s1" class="active"></div>
+                <div id="s2"></div>
+                <div id="s3"></div>
+            </div>
+        </div>
+    </div>
+    <!--end reviews-->
 
     <!--start benfits-->
     <div class="benfits">
@@ -144,77 +218,80 @@
         <div class="container">
             <div class="list">
 
-            <div class="course">
-                <img src="./img/English learning_.jpeg">
-                <div class="info">
-                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
-                    <span> <i class="far fa-clock"></i>100 Hour</span>
-                </div>
-                <h3>English</h3>
-                <p>Our Comprehensive English Course is structured to foster proficiency in listening, speaking, reading,
-                    and writing Lorem ipsum dolor sit amet.</p>
-                <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
-                <div class="data">
-                    <span><img src="./img/inst1.png">Dr.Emily</span>
-                    <div class="rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="course">
+                    <img src="./img/English learning_.jpeg">
+                    <div class="info">
+                        <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                        <span> <i class="far fa-clock"></i>100 Hour</span>
+                    </div>
+                    <h3>English</h3>
+                    <p>Our Comprehensive English Course is structured to foster proficiency in listening, speaking,
+                        reading,
+                        and writing Lorem ipsum dolor sit amet.</p>
+                    <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
+                    <div class="data">
+                        <span><img src="./img/inst1.png">Dr.Emily</span>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="course">
-                <img src="./img/c++.png">
-                <div class="info">
-                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
-                    <span> <i class="far fa-clock"></i>100 Hour</span>
-                </div>
-                <h3>C++</h3>
-                <p>Embark on a coding journey with our C++ Course! Whether you're a beginner eager to learn programming
-                    or an experienced developer looking to expand your skill.</p>
-                <span class="salary"><i class="fas fa-dollar-sign"></i>900</span>
-                <div class="data">
-                    <span><img src="./img/inst3.jpg">Dr.Samuel</span>
-                    <div class="rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="course">
+                    <img src="./img/c++.png">
+                    <div class="info">
+                        <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                        <span> <i class="far fa-clock"></i>100 Hour</span>
+                    </div>
+                    <h3>C++</h3>
+                    <p>Embark on a coding journey with our C++ Course! Whether you're a beginner eager to learn
+                        programming
+                        or an experienced developer looking to expand your skill.</p>
+                    <span class="salary"><i class="fas fa-dollar-sign"></i>900</span>
+                    <div class="data">
+                        <span><img src="./img/inst3.jpg">Dr.Samuel</span>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="course">
-                <img src="./img/py.jpg">
-                <div class="info">
-                    <span><i class="fas fa-tasks"></i>20 Lesson</span>
-                    <span> <i class="far fa-clock"></i>120 Hour</span>
-                </div>
-                <h3>Python</h3>
-                <p>Open doors to innovation and problem-solving by learning Python. Our course offers a supportive and
-                    structured environment suitable for all one.</p>
-                <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
-                <div class="data">
-                    <span><img src="./img/inst6.png">Dr.Sophia</span>
-                    <div class="rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="course">
+                    <img src="./img/py.jpg">
+                    <div class="info">
+                        <span><i class="fas fa-tasks"></i>20 Lesson</span>
+                        <span> <i class="far fa-clock"></i>120 Hour</span>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Open doors to innovation and problem-solving by learning Python. Our course offers a supportive
+                        and
+                        structured environment suitable for all one.</p>
+                    <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
+                    <div class="data">
+                        <span><img src="./img/inst6.png">Dr.Sophia</span>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
 
         </div>
         <div class="btn">
             <a class="all" href="courses.html">View all <i class="fa-regular fa-hand-back-fist"></i></a>
-        </div>  
+        </div>
     </div>
     <!-- end courses -->
 
@@ -230,7 +307,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
@@ -244,7 +322,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
@@ -259,7 +338,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
@@ -275,7 +355,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
@@ -290,7 +371,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
@@ -304,7 +386,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
@@ -319,7 +402,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
@@ -333,16 +417,17 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <div class="media">
                         <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
                 </div>
             </div>
-                   
+
 
         </div>
-       
+
     </div>
 
     <!-- end team -->
@@ -370,7 +455,40 @@
         </div>
     </div>
     <!-- end contact -->
+    <script>
 
+        $(document).ready(function () {
+            $("#rev-content1").show();
+            $("#rev-content2").hide();
+            $("#rev-content3").hide();
+            $("#s1").click(function () {
+                $("#rev-content1").slideDown(3000);
+                $("#rev-content2").hide();
+                $("#rev-content3").hide();
+                $("#s1").css("background-color", " teal");
+                $("#s2").css("background-color", "aliceblue");
+                $("#s3").css("background-color", "aliceblue");
+            });
+            $("#s2").click(function () {
+                $("#rev-content2").slideDown(3000);
+                $("#rev-content1").hide();
+                $("#rev-content3").hide();
+                $("#s2").css("background-color", "teal");
+                $("#s3").css("background-color", "aliceblue");
+                $("#s1").css("background-color", "aliceblue");
+            });
+            $("#s3").click(function () {
+                $("#rev-content3").slideDown(3000);
+                $("#rev-content2").hide();
+                $("#rev-content1").hide();
+                $("#s3").css("background-color", "teal");
+                $("#s2").css("background-color", "aliceblue");
+                $("#s1").css("background-color", "aliceblue");
+            });
+
+
+        });
+    </script>
 </body>
 
 </html>
