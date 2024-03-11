@@ -1,3 +1,5 @@
+//navbar
+
 $(document).ready(function () {
     
     $("#bar").click(function() {
@@ -23,57 +25,55 @@ $(document).ready(function () {
 
     });
 
-    let input=document.querySelector("#inputp");
-let butt=document.querySelector("#pass");
-
-
-butt.addEventListener('click', handle)
- function handle() {
-if(butt.getAttribute('data-text') == "show" ){
-    input.setAttribute('type', 'text');
-    butt.setAttribute('data-text', 'hide');
-    butt.innerHTML="Hide";
-}
-else{
-input.setAttribute('type', 'password');
-butt.setAttribute('data-text', 'show');
-butt.innerHTML="Show";
-}
-}
-
-
-
-
-
-
-$(document).ready(function () {
-    $("#rev-content1").show();
-    $("#rev-content2").hide();         
-    $("#rev-content3").hide(); 
-    $("#s1").click(function() {
-        $("#rev-content1").fadeIn(4000);
-        $("#rev-content2").hide();
-        $("#rev-content3").hide();
-        $("#s1").css("background-color", " teal");
-        $("#s2").css("background-color", "aliceblue");
-        $("#s3").css("background-color", "aliceblue");
-    });
-        $("#s2").click(function() {
-            $("#rev-content2").fadeIn(4000);
-            $("#rev-content1").hide();
-            $("#rev-content3").hide();
-            $("#s2").css("background-color", "teal");
-            $("#s3").css("background-color", "aliceblue");
-            $("#s1").css("background-color", "aliceblue");
+    //reviews
+    $(document).ready(function () {
+        var currentIndex = 1;
+    
+        function showContent(index) {
+            $("#rev-content1, #rev-content2, #rev-content3").hide();
+            $("#s1, #s2, #s3").css("background-color", "aliceblue");
+    
+            $("#rev-content" + index).show();
+            $("#s" + index).css("background-color", "rgb(132, 0, 255)");
+        }
+    
+        function changeContent() {
+            currentIndex = (currentIndex % 3) + 1;
+            showContent(currentIndex);
+        }
+    
+        // Initial setup
+        showContent(currentIndex);
+    
+        // Auto change every 3 seconds
+        setInterval(changeContent, 3000);
+    
+        // Click events
+        $("#s1").click(function () {
+            currentIndex = 1;
+            showContent(currentIndex);
         });
-            $("#s3").click(function() {
-                $("#rev-content3").fadeIn(4000);
-                $("#rev-content2").hide();
-                $("#rev-content1").hide();
-                $("#s3").css("background-color", "teal");
-                $("#s2").css("background-color", "aliceblue");
-                $("#s1").css("background-color", "aliceblue");
-            });
-       
-            
+    
+        $("#s2").click(function () {
+            currentIndex = 2;
+            showContent(currentIndex);
+        });
+    
+        $("#s3").click(function () {
+            currentIndex = 3;
+            showContent(currentIndex);
+        });
     });
+    
+
+
+//payment
+function redirectToPaymentPage() {
+    window.location.href = "payment.html";
+}
+
+
+
+
+
+

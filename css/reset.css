@@ -1,4 +1,4 @@
- /*start register*/
+ /*start reset*/
  body{
     background-color: lavender;
   }
@@ -55,7 +55,7 @@
   }
   
   .contact .content form .main-input {
-    padding: 20px;
+    padding: 15px;
     display: block;
     border: none;
     margin-bottom: 30px;
@@ -76,7 +76,7 @@
   .contact .content form textarea.main-input {
     height: 200px;
   }
-  .contact .content form .reset  {
+  .contact .content form .verfiy  {
     background: -webkit-linear-gradient(90deg, #0a3c8e,#04398e,#203b86,#09489b);
     background: linear-gradient(90deg, #001a43,#022e74,#213671,#084da6);
     padding: 15px;
@@ -94,7 +94,7 @@
     transition: 0.5s;
     text-decoration: none;
   }
-  .contact .content form .reset:hover{
+  .contact .content form .verfiy:hover{
     transform: translateX(-10px);
   }
   
@@ -115,5 +115,6 @@
   }
   }
 
-    /*end register*/
+    /*end reset*/
+
   
