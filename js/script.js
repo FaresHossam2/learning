@@ -5,21 +5,22 @@ $(document).ready(function () {
     $("#bar").click(function() {
        
         $("nav ul").css("right", " -100px");
+        $("#bar").css("position", " absolute");
+
        
     });
     $("#close").click(function() {
        
         $("nav ul").css("right", " -3000px");
+        $("#bar").css("position", "relative");
+
 
     });
     $("li").click(function() {
        
         $("nav ul").css("right", " -3000px");
+        $("#bar").css("position", "relative");
 
-    });
-    $("#sign").click(function() {
-       
-        $("nav ul").css("right", " -3000px");
 
     });
 

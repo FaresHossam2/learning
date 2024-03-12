@@ -121,6 +121,7 @@ nav ul {
 
 }
 
+
 @media(max-width:1200px) {
   nav ul {
     flex-direction: column;
@@ -172,12 +173,39 @@ nav ul li:hover {
   transform: scale(1.1);
 }
 
+nav ul i {
+  font-size: 25px;
+  position: relative;
+  top: 2px;
+  left: 70px;
+  color: rgb(132, 0, 255);
+
+}
+@media(min-width:768px) {
+  nav ul i {
+    display: block;
+  }}
+nav ul a:hover {
+  text-decoration: none;
+  color: rgb(182, 104, 255);
+
+}
 nav #last {
   margin-left: -48px;
 }
 
-
-
+.chat img{
+    width: 60px;
+    position: relative;
+    right: 50px;
+}
+@media(max-width:768px) {
+  .chat img{
+    width: 50px;
+    position: relative;
+    right: -10px;
+}
+}
 #bar {
   font-size: 30px;
   font-weight: bold;
@@ -201,6 +229,8 @@ nav #last {
   #bar {
     display: block;
     margin-right: 50px;
+    position: relative;
+    right: -120px;
   }
 
   #close {
@@ -208,9 +238,21 @@ nav #last {
   }
 }
 
+@media(max-width:992px) {
+  #bar {
+ 
+    right: -250px;
+  }
+}
+@media(max-width:800px) {
+  #bar {
+ 
+    right: -220px;
+  }
+}
 @media(max-width:768px) {
   #bar {
-    margin-right: 10px;
+    right: -130px;
   }
 
 }
@@ -284,7 +326,7 @@ nav #last {
 @media(max-width:1200px) {
   .landing .text {
     margin-right: 0;
-    margin-top: auto;
+    margin-top: 200px;
   }
 }
 
@@ -907,6 +949,7 @@ nav #last {
   overflow-y: hidden;
   margin-top: 64px;
   height: 120vh;
+  overflow: visible;
 }
 @media(max-width:768px){
   .team{
