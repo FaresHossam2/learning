@@ -172,23 +172,6 @@ nav ul li:hover {
   transform: scale(1.1);
 }
 
-nav ul i {
-  font-size: 25px;
-  position: relative;
-  top: 2px;
-  left: 70px;
-  color: rgb(132, 0, 255);
-
-}
-@media(min-width:768px) {
-  nav ul i {
-    display: block;
-  }}
-nav ul a:hover {
-  text-decoration: none;
-  color: rgb(182, 104, 255);
-
-}
 nav #last {
   margin-left: -48px;
 }
@@ -917,7 +900,7 @@ nav #last {
 }
 
 /* instructor section */
-.team {
+.team{
   display: grid;
   gap: 50px;
   position: relative;
@@ -925,8 +908,13 @@ nav #last {
   margin-top: 64px;
   height: 120vh;
 }
-
-.team .container {
+@media(max-width:768px){
+  .team{
+  
+    overflow: visible;
+  }
+}
+.team .container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 332px;
@@ -935,8 +923,7 @@ nav #last {
   padding-bottom: 100px;
 
 }
-
-.team .box {
+.team .box{
   width: 247px;
   height: 247px;
   border-radius: 50%;
@@ -944,21 +931,23 @@ nav #last {
   position: relative;
   transition: 0.6s;
 }
-
-@media(max-width:768px) {
-  .team .box {
-    margin-bottom: 50px;
+@media(max-width:1200px){
+.team{
+  height: 152vh;
+}
+}
+@media(max-width:768px){
+  .team .box{
+margin-bottom: 35px; 
   }
 }
-
-.team .box:hover {
+.team .box:hover{
   text-align: center;
   width: 247px;
   border-radius: 9px;
   height: 294px;
 }
-
-.team img {
+.team img{
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -968,18 +957,15 @@ nav #last {
   left: 1%;
   transition: 0.6s;
 }
-
-.team .box:hover img {
+.team .box:hover img{
   margin-top: -38%;
   border-radius: 15px;
 
 }
-
-.team .info {
+.team .info{
   opacity: 0;
 }
-
-.team .box:hover .info {
+.team .box:hover .info{
   position: absolute;
   opacity: 1;
   top: 58%;
@@ -987,19 +973,71 @@ nav #last {
   line-height: 1.2;
   margin-top: -20px;
 }
-
-.team .info h3 {
-  color: var(--main-color);
-  font-weight: bold;
+.team .info h3{
+color: var(--main-color);
+font-family: 'Pacifico', cursive;
+font-weight: bold;
 }
-
-.team .info p {
+.team .info p{
   width: 75%;
   margin-left: 15%;
   margin-top: 6px;
   margin-bottom: 9px;
 }
 
+.team h2{
+  text-align: center;
+  font-size: 43px;
+  margin-bottom: 4%;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.team h2 span{
+  color: rgb(182, 104, 255);
+  margin-left: 16px;
+}
+@media(max-width:1300px){
+  .team .container{
+    gap: 55px;
+    margin-top: -22px;
+  }
+
+}
+@media (max-width:992px) {
+.team .container{
+ margin-top: 0;
+}
+}
+@media (max-width:767px) {
+  .team{
+    height: 327vh;
+    display: grid;
+    gap: 50px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .team .container{
+    margin-left: 67px;
+    position: absolute;
+    margin-top: 136px;
+    gap: 83px;
+  }
+  .team .box:nth-child(2){
+    margin-top: -83px;
+  }
+}
+.team .box .media{
+    display: flex;
+    justify-content: space-evenly;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 140px;
+    margin-left: 54px;
+    margin-top: 12px;
+}
+.team .box .media i{
+  transition: 0.3s;
+}
 .team .box i:first-child {
   color: #3b5998;
   color: rgb(24, 119, 242);
@@ -1020,77 +1058,6 @@ nav #last {
   color: rgb(10, 102, 194);
 }
 
-.team .box i {
-  cursor: pointer;
-  font-size: 18px;
-  padding-top: 5px;
-}
-
-.team .box .media i:hover {
-  transform: scale(1.2);
-}
-
-.team h2 {
-  text-align: center;
-  font-size: 43px;
-  margin-bottom: 4%;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.team h2 span {
-  color: rgb(132, 0, 255);
-  margin-left: 16px;
-}
-
-@media(max-width:1300px) {
-  .team .container {
-    gap: 22px;
-    margin-top: 0;
-  }
-
-}
-
-@media (max-width:992px) {
-  .team .container {
-    margin-top: 0;
-  }
-}
-
-@media (max-width:767px) {
-  .team {
-    height: 300vh;
-    display: grid;
-    gap: 50px;
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  .team .container {
-    margin-left: 67px;
-    position: absolute;
-    margin-top: 136px;
-    gap: 83px;
-  }
-
-  .team .box:nth-child(2) {
-    margin-top: -83px;
-  }
-}
-
-.team .box .media {
-  display: flex;
-  justify-content: space-evenly;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  width: 140px;
-  margin-left: 54px;
-  margin-top: 12px;
-}
-
-.team .box .media i {
-  transition: 0.3s;
-}
 
 
 /*end team*/

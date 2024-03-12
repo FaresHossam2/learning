@@ -107,10 +107,9 @@ function closeSuccessCard() {
        // Add a click event listener to the "Check Out" link
        closeButton.addEventListener('click', function (event) {
         // Prevent the default link behavior (following the href)
-        event.preventDefault();
+        event.closeSuccessCard();
   
         // Show the success card for successful payment
-        window.location.href = "courses.html";
   
       });
   });
@@ -121,5 +120,4 @@ function closeSuccessCard() {
 
 
 
-  var firstNameValue = document.getElementById('firstNameInput').value;
-  var firstName = document.getElementById('firstName').innerHTML= firstNameValue;
+ 
