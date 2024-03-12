@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+        <title>Register</title>
         <!-- Render All Elements Normally -->
         <link rel="stylesheet" href="css/normalize.css" />
         <!-- Font Awesome Library -->
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Main Template CSS File -->
-        <link rel="stylesheet" href="css/Login.css" />
+        <link rel="stylesheet" href="css/register.css" />
         <link rel="stylesheet" href="css/fa.min.css">
     
         <!-- Google Fonts -->
@@ -21,39 +21,43 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
             rel="stylesheet" />
         <!-- JS & JQUERY -->
-         <script src="js/jquery-3.7.1.min.js"></script> 
+        <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+        <script src="js/script.js"></script>
     </head>
 </head>
 <body>
     <div class="contact" id="contact">
         <div class="container">
         <div class="tittle">
-            <h1>Login</h1>
+            <h1>Create Account</h1>
         </div>
+      
           <div class="content">
-            <div class="image">
-                <img src="img/log (1).png" alt="">
-            </div>
-            <form id="signInForm" >
-              <input class="main-input" type="text" name="name" placeholder="Username"required> <i class="fa-solid fa-user ic "></i>
-              <input class="main-input" type="password" name="name" placeholder="Password" required> <i class="fa-solid fa-lock-open ic"></i>
-              <div class="form-group mb-3">
-                <div class="click">
-                    <div class="remember">
-                        <input type="checkbox" name="remember" value="1" class="blue-checkbox">
-                        <label for="remember">Remember me</label>
-                    </div>
-                    
-                    <div class="forget">
-                        <a href="./reset.html">Forget Password ?</a>
-                    </div>
+            <form id="signInForm">
+              <div class="row" >
+                <div class="col">
+                  <input id="firstNameInput" type="text" class="main-input" placeholder="First name" required>
                 </div>
-            </div>
-            <div id="error-message" class="error-message"></div>
-            <input  class="signin" type="submit" value="Sign in">
-            <div class="or">
+                <div class="col">
+                  <input type="text" class="main-input" placeholder="Last name" required>
+                </div>
+              </div>            
+              <input class="main-input" type="email" name="mail" placeholder="Your Email" required>
+             
+                  <input class="main-input" type="text" name="name" placeholder="Username " required>
+                
+              <div class="row">
+                <div class="col">
+                  <input type="password" class="main-input" placeholder="Password" required>
+                </div>
+                <div class="col">
+                  <input type="password" class="main-input" placeholder="Confirm Password" required>
+                </div>
+              </div>
+              <a  href="./index.html"><input class="signup" type="submit" value="Sign up"></a>
+              <div class="or">
                 <div class="txt">
-                  <h4>or sign in with</h4>
+                  <h4> <span></span> sign up with</h4>
                 </div>
                 <div class="social">
                   <i class="fa-brands fa-facebook"></i>
@@ -61,11 +65,12 @@
                   <i class="fa-brands fa-linkedin"></i>
                   <i class="fa-brands fa-instagram"></i>  
                 </div>
-                <div class="donot">
-                  <h4>don't have an account ? <a href="./register.html">create an account</a> </h4>
-                 </div>
+               <div class="already">
+                <h4>already have an Account ? <a href="./index.html">sign in</a> </h4>
+               </div>
               </div>
             </form>
+         
           </div>
         </div>
       </div>
@@ -73,7 +78,7 @@
         document.getElementById('signInForm').addEventListener('submit', function (event) {
           event.preventDefault();
             // Redirect to another page (replace 'targetPage.html' with your desired page)
-            window.location.href = 'home.html';
+            window.location.href = './index.html';
         });
     </script>
             <script src="js/script.js"></script>
