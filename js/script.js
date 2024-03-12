@@ -72,8 +72,54 @@ function redirectToPaymentPage() {
     window.location.href = "payment.html";
 }
 
+function closeSuccessCard() {
+    var successCard = document.querySelector('.success-card');
+    successCard.style.display = 'none';
+
+  }
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the elements
+    var startFreeTrialLink = document.querySelector('.free a');
+    var checkOutLink = document.querySelector('a[href=""]');
+    var closeButton = document.querySelector('.close-button');
+    var successMessage = document.querySelector('.success-message');
+    var successCard = document.querySelector('.success-card');
+  
+    // Add a click event listener to the "Start Free Trial" link
+    startFreeTrialLink.addEventListener('click', function (event) {
+      // Prevent the default link behavior (following the href)
+      event.preventDefault();
+  
+      // Show the success message
+      successMessage.style.display = 'block';
+    });
+  
+    // Add a click event listener to the "Check Out" link
+    checkOutLink.addEventListener('click', function (event) {
+      // Prevent the default link behavior (following the href)
+      event.preventDefault();
+
+      // Show the success card for successful payment
+      successCard.style.display = 'block';
+
+    });
+       // Add a click event listener to the "Check Out" link
+       closeButton.addEventListener('click', function (event) {
+        // Prevent the default link behavior (following the href)
+        event.preventDefault();
+  
+        // Show the success card for successful payment
+        window.location.href = "courses.html";
+  
+      });
+  });
+  
 
 
 
 
 
+
+  var firstNameValue = document.getElementById('firstNameInput').value;
+  var firstName = document.getElementById('firstName').innerHTML= firstNameValue;

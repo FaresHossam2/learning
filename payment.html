@@ -22,97 +22,60 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
             rel="stylesheet" />
         <!-- JS & JQUERY -->
-        <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+      <script src="js/jquery-3.7.1.min.js"></script> 
         <script src="js/script.js"></script>
     </head>
 </head>
 <body>
     <div class="contact payment" id="contact">
         <div class="container">
-        <div class="tittle">
-            <h1>Payment</h1>
-        </div>
-      
-          <div class="content">
-            <div class="dis">
-                <h3>Check Out</h3>
-                <p>3,641 already enrolled!</p>
-            </div>
-           
-            <form class="pay">
-                <h2>pilling Information</h2>
-            <label>Name</label>
-              <input type="email" name="mail" placeholder="Your Email" required>
-              <label>Country</label>
-             <select>
-              <option>Afghanistan</option>
-               <option>Albania</option> 
-               <option>Algeria</option> 
-               <option> Andorra</option> 
-               <option>Antigua and Barbuda</option> 
-               <option>Argentina</option> 
-               <option>Armenia</option> 
-               <option>Australia</option> 
-               <option>Austria</option> 
-               <option>Bahamas</option> 
-               <option>Bahrain</option>
-               <option>Bangladesh</option>
-               <option>Barbados</option>
-               <option>Bhutan</option>
-               <option>Bolivia</option>
-               <option>Benin</option>
-               <option>Belize</option>
-               <option>Belgium</option>
-               <option>ChadComoros</option>
-               <option>Chile</option>
-               <option>China</option>
-               <option>Colombia</option>
-               <option>Denmark</option>
-               <option>Djibouti</option>
-               <option>Dominica</option>
-               <option>Dominican Republic</option>
-               <option>East Timor (Timor-Leste)</option>
-               <option>Ecuador</option>
-               <option>Egypt</option>
-               <option>El Salvador</option>
-               <option>Gabon</option>
-               <option>Georgia</option>
-               <option>Gambia</option>
-               <option>Gambia</option>
-               <option> Iraq</option>
-               <option>Iran</option>
-               <option>Ireland</option>
-             </select>
-             <h3 class="head">Payment methods</h3>
-             <div class="card">
-            <p><i class="fas fa-credit-card"></i> Card</p>
-            <label>CARD NUMBER</label>
-            <input type="email" name="mail" placeholder="1234 1234 1234 1234" required>
-            <div class="cards">
-            <img src="./img/card1.jpg">
-            <img src="./img/card2.jpg">
-            <img src="./img/card3.jpg">
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label>EXPIRATION</label>
-                  <input type="text" class="main-input" placeholder="MM/YY" required>
+            <div class="pay">
+            <img src="./img/visa.jpg">
+            <form>
+              <div class="card">
+                <p><i class="fas fa-credit-card"></i> Card</p>
+              <div class="dis">
+                <div class="row"><input type="text" placeholder="Name"><label> Name</label>
                 </div>
-                <div class="col">
-                    <label>CVC</label>
-                  <input type="text" class="main-input" placeholder="cvc" required>
-                </div>
+                 
               </div>
+              <div class="row"><input type="text" class="num" placeholder="1234 1234 1234 1234"><label class="number"
+                >Card Number</label>
+                 <div class="cards">
+                  <img src="./img/card1.jpg">
+                  <img src="./img/card2.jpg">
+                  <img src="./img/card3.jpg">
+                  </div>
+              </div>
+              <div class="row"><input type="text" placeholder="MM/YY"><label>Exprition</label>
+                </div>
+                <div class="row"><input type="text" placeholder="CVC" ><label>CVC</label>
+                  <!-- <span style="margin-top: 81px;"></span> -->
+                </div>
 <p>By providing your card information, you allow Coursera, Inc. to charge your card for future payments in accordance with their terms.</p>
              </div>
-             <div class="free">
-            <a href="./home.html">Start Free Trial</a>
-            <p>You won't be charged today</p>
+             <div class="free"> 
+              <a href="">Check Out</a> 
+              <!-- Add this HTML after the closing tag of the "free" div -->
+<!-- Add this HTML after the closing tag of the "free" div -->
+<div class="success-card" style="display: none;">
+  <i class="fa-regular fa-circle-check"></i>
+  <h2>Payment Successful!</h2>
+  <p >Your payment has been processed successfully. <br> <span>Thank you!</span></p>
+  <button class="close-button" onclick="coursesPage()" >Close</button>
+
+</div>
+
+          
+            <a href="./courses.html">Start Free Trial</a>
              </div>
+             <p class="today">You won't be charged today</p>
+
             </form>
           </div>
         </div>
       </div>
-   
+     
+
 </body>
 </html>
